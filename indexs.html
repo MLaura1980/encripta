@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+        <header class="imgLogo"><!--Logo-->
+                <img src="IMAGENES/Logo.png" alt=" Logo de ALURA">
+        </header>
+        <main class="encrimpador"> <!--Texto ha encriptar-->
+                <form onsubmit="return false"class="encriptaTexto"> 
+                        <div class="seEncriptara">
+                                <textarea placeholder=" Ingrese el texto aquí" class="haEncriptar" id="textEncriptar" rows="10" cols="30"
+                                 autofocus required></textarea>
+                                <!--botones e instruccion-->
+                                <legend class="instruccion"><img src="IMAGENES/bi_exclamation-circle-fill.png" alt="Viñeta"> Solo letras minúsculas y sin acentos</legend>
+                                <button type="submit" class="btnEncriptar" id="encripta"> Encriptar </button>
+                                <button type="submit" class="btnDesencritar" id="desencritar">Desencriptar</button> 
+                        </div>
+                         <!--texto encriptado a copiar-->
+                         <div class="encriptado">
+                                <textarea class="textoEncriptado" id="encriptado" rows="4" cols="30"></textarea> <!--muestra texto Encriptador/-->
+                                <img src="IMAGENES/Muñeco.png" alt="Muñeco" class="imgMuñeco">
+                                <p class="advertencia" id="advertenciaMensaje"></p>
+                                <p class="instruccionDos" id="instruDos">Ingresa el texto que desees encriptar o desencriptar.</p>
+                                <button type="submit" class="btnCopiar" id="copiar"> Copiar</button>
+                        </div>
+                        
+                 </form>
+              
+        </main>
+        <footer class="rodapie">
+                        <p> Challenge ONE - Sprint 01: Construye un encriptador de texto con Javascript - Cursante: María Laura Couto </p>
+        </footer>
+        <script src="script.js" ></script>
+</body>
+</html>
