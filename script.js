@@ -5,11 +5,11 @@ document.getElementById("copiar").style.display = 'none';
 const botonCifrar = document.getElementById("encripta");
     botonCifrar.addEventListener("click", () => {
         let textProceso = document.getElementById("textEncriptar").value;                         
-            let vocalesTilde = ['á','é','í','ó','ú','ñ'];;
+            let vocalesTilde = ['á','é','í','ó','ú'];;
                     for (i=0; i<textProceso.length; i++) {
                         for (j=0; j<textProceso.length; j++) {
                             if (vocalesTilde[i] === textProceso.charAt(j)) {
-                                return document.getElementById("advertenciaMensaje").innerHTML = "Escriba sin acentos y sin caracteres especiales, por favor.";
+                                return document.getElementById("advertenciaMensaje").innerHTML = "Escriba sin acentos, por favor.";
                                   
                             }
                         }
